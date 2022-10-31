@@ -1,0 +1,57 @@
+$sidebar-width: 189px; // Chiều dài sidebar
+$sidebar-minWidth: 50px; // Chiều dài sidebar khi thu nhỏ
+
+.sidebar {
+  padding: 0;
+  margin: 0;
+  width: $sidebar-width;
+  min-height: calc(100vh - 60px);
+
+  &__container {
+    padding: 23px 9px 0 9px;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 1px $menu-border-color;
+    height: 100%;
+
+    position: fixed;
+    width: $sidebar-width;
+
+    &-icon {
+      margin-left: 8px;
+      color: $sidebar-icon-color;
+      cursor: pointer;
+      width: 14px;
+      height: 10px;
+    }
+
+    &.active {
+      width: $sidebar-width;
+    }
+
+    &.deactive {
+      width: $sidebar-minWidth;
+
+      .sidebar__menu {
+        display: none;
+      }
+    }
+  }
+
+  &__menu {
+    margin-top: 19px;
+    display: flex;
+    flex-direction: column;
+
+    &-link {
+      @extend .text-sideMenu;
+    }
+
+    &-link.active {
+      background-color: $menu-active-color !important;
+      font-weight: 600 !important;
+      color: $primary-color !important;
+      border-radius: $border-radius !important;
+    }
+  }
+}

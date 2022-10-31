@@ -1,0 +1,100 @@
+// import các module của form
+
+@import "./datetimepicker";
+@import "./input";
+@import "./inputpicker";
+@import "./requiredlabel";
+@import "./textarea";
+
+.rs-form {
+  width: 100%;
+}
+
+.rs-form-group {
+  width: 100%;
+}
+
+.rs-form-horizontal {
+  .rs-form-group:not(:last-child) {
+    margin: 0 !important;
+  }
+
+  .rs-form-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+
+    .rs-form-control {
+      height: 30px;
+      flex-grow: 1;
+    }
+  }
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.rs-form-vertical {
+  display: flex;
+  align-items: center;
+}
+
+// Form chiều dọc
+
+.rs-form-vertical {
+  .form-control-datetime {
+    display: flex;
+    align-items: center;
+    height: 30px;
+
+    .form-input {
+      height: 100%;
+      width: calc(50% - 7px);
+    }
+
+    .rs-btn-close {
+      display: none;
+    }
+
+    .rs-picker-toggle-textbox {
+      background-color: darkcyan;
+      padding-left: 5px !important;
+    }
+
+    .rs-picker-toggle-read-only {
+      padding-left: 5px !important;
+    }
+
+    .rs-picker-toggle-caret {
+      top: 3px !important;
+    }
+  }
+
+  .form-input {
+    height: 30px;
+  }
+}
+
+// Khi input trở thành plaintext
+
+.form-plaintext {
+  .rs-form-control-label {
+    width: 50% !important;
+  }
+
+  .form-input {
+    flex-grow: unset !important;
+    display: flex;
+    align-items: center;
+    @extend .text-input;
+  }
+
+  .rs-picker-toggle-wrapper {
+    height: unset;
+    border: unset;
+  }
+}

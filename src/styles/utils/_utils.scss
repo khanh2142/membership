@@ -1,0 +1,28 @@
+$border-radius: 3px;
+
+// Title tag
+
+.titleTag__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleTag__container-tag {
+  padding: 0 32px;
+  background-color: $title-tag-color;
+  width: 100%;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titleTag__container-children {
+  width: 100%;
+  padding: 12px 32px 16px;
+}
+
+.title-button {
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+.rs-btn-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.rs-btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  padding: 6px 15px 7px 16px;
+  border-radius: $border-radius !important;
+  background-color: $tertiary-color;
+  border: 0.5px solid $text-seconday-color;
+  color: $text-primary-color;
+}
+
+.rs-btn-primary {
+  background-color: $primary-color;
+  border: 0.5px solid $primary-color;
+  color: $text-tertiary-color;
+
+  &:hover {
+    opacity: 0.8;
+    background-color: $primary-color;
+  }
+}
+
+.button-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+  margin-left: 9px;
+
+  &.button-normal {
+    width: 41px;
+    height: 30px;
+  }
+
+  &.button-large {
+    width: 53px;
+    height: 45px;
+  }
+}

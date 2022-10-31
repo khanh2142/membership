@@ -1,0 +1,55 @@
+// Title ở các block màu xanh
+
+.text-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: $text-primary-color;
+}
+
+// Text của label
+
+.text-label {
+  text-align: left !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: $text-seconday-color !important;
+  width: 120px !important;
+  height: 30px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+// Text của input
+
+.text-input {
+  height: 100% !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: $text-primary-color !important;
+}
+
+// Text của sidemenu
+.text-sideMenu {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 13px !important;
+  line-height: 16px !important;
+  color: $text-primary-color !important;
+  padding: 6px 10px 7px 8px !important;
+}
+
+// Text của menu header
+.text-headerMenu {
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  line-height: 17px !important;
+  color: $secondary-color !important;
+}

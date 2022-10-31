@@ -1,0 +1,26 @@
+.rs-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 23px;
+
+  &::before {
+    content: none !important;
+  }
+
+  &::after {
+    content: none !important;
+  }
+}
+
+.row-main {
+  padding: 10px 20px 10px 23px;
+}
+
+.row-default {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}

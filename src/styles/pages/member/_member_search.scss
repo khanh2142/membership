@@ -1,0 +1,34 @@
+.member__navbar {
+  display: flex;
+  height: 49px;
+  border-bottom: 0.5px solid $text-seconday-color;
+  width: calc(100% + 10px);
+  margin-left: -5px;
+  margin-right: -5px;
+  align-items: center;
+  padding-left: 23px;
+  gap: 50px;
+
+  &-link {
+    @extend .text-label;
+    width: auto !important;
+    height: 100% !important;
+    cursor: pointer;
+
+    &.active {
+      font-weight: 600 !important;
+      color: $primary-color !important;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1.5px;
+        bottom: 1px;
+        left: 0;
+        background-color: darkcyan;
+      }
+    }
+  }
+}

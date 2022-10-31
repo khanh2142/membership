@@ -1,0 +1,88 @@
+.header {
+  background-color: $primary-color;
+  display: flex;
+  height: 55px;
+  padding: 0 12px 0 17px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      gap: 58px;
+    }
+  }
+
+  &__logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-image {
+      width: 80px;
+      height: 35px;
+      background-position: 50% 50%;
+      background-size: cover;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    position: relative;
+
+    &-link {
+      @extend .text-headerMenu;
+      position: relative;
+    }
+
+    &-link.active {
+      position: relative;
+    }
+
+    &-link.active::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: $secondary-color;
+      left: 0;
+      bottom: -12px;
+    }
+  }
+
+  &__user {
+    height: 100%;
+
+    .dropdown {
+      height: 100%;
+
+      &-button {
+        height: 100%;
+        background-color: transparent;
+      }
+    }
+
+    &-avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 0.5px solid $secondary-color;
+      background-size: cover;
+      background-position: 50% 50%;
+    }
+  }
+}

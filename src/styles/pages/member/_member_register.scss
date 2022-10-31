@@ -1,0 +1,23 @@
+.member__register {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 11px;
+  padding-bottom: 18px;
+
+  &-content {
+    height: 32px;
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+  }
+
+  &-code {
+    color: $text-code-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,15 @@
+.rs-input {
+  @extend .text-input;
+
+  width: 100% !important;
+  border: 0.5px solid $text-seconday-color;
+  border-radius: $border-radius;
+
+  &:disabled {
+    background-color: $disabled-input;
+  }
+
+  &::placeholder {
+    color: $text-seconday-color;
+  }
+}
