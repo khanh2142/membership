@@ -1,21 +1,23 @@
 .member__navbar {
-  display: flex;
-  height: 49px;
-  border-bottom: 0.5px solid $text-seconday-color;
-  width: calc(100% + 10px);
-  margin-left: -5px;
-  margin-right: -5px;
-  align-items: center;
-  padding-left: 23px;
-  gap: 50px;
+  .rs-navbar-nav {
+    width: 100%;
+    margin: 0 -5px;
+    width: calc(100% + 10px);
+    height: 49px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid $text-seconday-color;
+    padding-left: 23px;
+    gap: 50px;
 
-  &-link {
-    @extend .text-label;
-    width: auto !important;
-    height: 100% !important;
-    cursor: pointer;
+    .rs-navbar-item {
+      height: 100% !important;
+      cursor: pointer;
+      @extend .text-label;
+      width: auto !important;
+    }
 
-    &.active {
+    .rs-navbar-item-active {
       font-weight: 600 !important;
       color: $primary-color !important;
       position: relative;
